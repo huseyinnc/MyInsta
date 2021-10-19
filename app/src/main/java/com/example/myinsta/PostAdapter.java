@@ -40,7 +40,7 @@ public class PostAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View view, ViewGroup viewGroup) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         View rowView;
         rowView = inflater.inflate(R.layout.row, null);
         EditText txtMessage = (EditText) rowView.findViewById(R.id.txtMessage);
